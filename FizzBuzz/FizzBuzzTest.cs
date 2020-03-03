@@ -4,11 +4,6 @@ namespace FizzBuzz
 {
     public class Tests
     {
-        [SetUp]
-        public void Setup()
-        {
-        }
-
         [Test]
         public void Return_Itself_When_Given_Number_Not_Divisible_By_3_Or_5(
             [Values(1, 2, 4, 7, 8)] int input)
@@ -17,7 +12,6 @@ namespace FizzBuzz
 
             Assert.AreEqual(input.ToString(), output);
         }
-
 
         [Test]
         public void Return_Fizz_When_Given_Multiple_Of_3(
