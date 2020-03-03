@@ -78,5 +78,15 @@ namespace FizzBuzz
 
             Assert.AreEqual("FizzBuzz", output);
         }
+
+        [Test]
+        public void Return_FizzBuzz_When_Given_30()
+        {
+            int input = 30;
+
+            string output = FizzBuzz.Value(input);
+
+            Assert.AreEqual("FizzBuzz", output);
+        }
     }
 }
