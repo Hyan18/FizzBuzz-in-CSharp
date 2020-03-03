@@ -1,6 +1,6 @@
 using NUnit.Framework;
 
-namespace FizzBuzz.Tests
+namespace FizzBuzz
 {
     public class Tests
     {
@@ -67,6 +67,16 @@ namespace FizzBuzz.Tests
             string output = FizzBuzz.Value(input);
 
             Assert.AreEqual("Buzz", output);
+        }
+
+        [Test]
+        public void Return_FizzBuzz_When_Given_15()
+        {
+            int input = 15;
+
+            string output = FizzBuzz.Value(input);
+
+            Assert.AreEqual("FizzBuzz", output);
         }
     }
 }
