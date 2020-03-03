@@ -8,6 +8,8 @@ namespace FizzBuzz
     {
         public static string Value(int input)
         {
+            if (input == 3)
+                return "Fizz";
             return input.ToString();
         }
     }
