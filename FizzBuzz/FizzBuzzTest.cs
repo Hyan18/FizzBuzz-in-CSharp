@@ -10,13 +10,23 @@ namespace FizzBuzz.Tests
         }
 
         [Test]
-        public void Test1()
+        public void Return_1_When_Given_1()
         {
             int input = 1;
 
             string output = FizzBuzz.Value(input);
 
             Assert.AreEqual("1", output);
+        }
+
+        [Test]
+        public void Return_2_When_Given_2()
+        {
+            int input = 2;
+
+            string output = FizzBuzz.Value(input);
+
+            Assert.AreEqual("2", output);
         }
     }
 }
