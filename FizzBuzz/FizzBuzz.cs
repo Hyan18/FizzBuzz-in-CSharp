@@ -8,13 +8,15 @@ namespace FizzBuzz
     {
         public static string Value(int input)
         {
-            if (input % (5*3) == 0)
-                return "FizzBuzz";
-            if (input % 5 == 0)
-                return "Buzz";
+            var output = String.Empty;
+
             if (input % 3 == 0)
-                return "Fizz";
-            return input.ToString();
+                output += "Fizz";
+            if (input % 5 == 0)
+                output += "Buzz";
+            if (string.IsNullOrEmpty(output))
+                output = input.ToString();
+            return output;
         }
     }
 }
